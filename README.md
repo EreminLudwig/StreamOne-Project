@@ -1,1 +1,3 @@
-# new project
+# New Project and Lessons
+
+For **Code Institute**

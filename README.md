@@ -1,1 +1,1 @@
-# new project
+# New projects and Lessons

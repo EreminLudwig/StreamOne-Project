@@ -1,0 +1,12 @@
+#red {
+	color: red;
+}
+#container {
+	width: 80%;
+	border: 5px double #dadada;	
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 20px 30px;
+	font-size: 15px;
+	margin-top: 20px;
+}

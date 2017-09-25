@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>Animation with CSS</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto" type="text/css">	<style type="text/css">		body {			margin: 0;			font-family: Roboto;			text-align: center;					}		@keyframes sunrise {			0% {				margin-bottom: 0;				margin-left: 340px;				background: white;			}						10% {				background: #f00;			}			40% {				background: #ffd630;			}			60% {				background: #ffd630;			}			90% {				background: #f00;			}			100% {				margin-bottom: 0;				margin-left: 40px;				background: #81bcca;			}		}		#sun {			width: 200px;			height: 200px;			border-radius: 100px;			animation-name: sunrise;			animation-duration: 5s;			animation-delay: 1s;			animation-timing-function: ease;			animation-fill-mode: backwards;			animation-direction: alternate;			animation-iteration-count: 2;		}	</style>
+</head>
+<body>
+	<h1>Animation with CSS</h1>
+	<div id="sun"></div>
+</body></html>

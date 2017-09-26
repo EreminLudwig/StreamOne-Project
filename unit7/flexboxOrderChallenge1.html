@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en">	<head>		<meta charset="utf-8">		<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">		<meta name="viewport" content="width=device-width, initial-scale=1">		<title>Flexbox</title>		<style>			body {				margin: 0;				font-family: Roboto;			}			#container1 {				width: 80%;				background-color: #e4e4e4;				border-radius: 10px;				padding: 10px;				margin: 20px auto;				font-size: 35px;				/* flexbox */				display: flex;				flex-direction: row;				flex-wrap: wrap;				justify-content: flex-end;				align-items: stretch;				/*				shorthand for Flexbox				flex-flow: row nowrap;				 */			}			.box {				display: inline-block;				background-color: #81bcca;				flex: 1;				height: 150px;				margin: 5px;				border-radius: 10px;				text-align: center;				/* flexbox values */			}			#box1 {				order: 1;			}			#box2 {				order: 2;			}			#box3 {				order: 3;			}						#box4 {				flex: 3;			}			.noHeight {				height: inherit;			}		</style>	</head>	<body>		<div id="container1">			<div class="box" id="box1">
+				<h2>1</h2>
+			</div>
+			<div class="box" id="box2">
+				<h2>2</h2>
+			</div>
+			<div class="box" id="box3">
+				<h2>3</h2>
+			</div>
+			<div class="box" id="box4">
+				<h2>4</h2>
+			</div>		</div>	</body></html>

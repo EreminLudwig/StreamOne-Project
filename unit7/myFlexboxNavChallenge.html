@@ -1,0 +1,17 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis" type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto" type="text/css">
+	<style type="text/css">		nav {			font-family: Roboto;			background-color: #eee;			margin: 30px auto;			width: 100%;			height: 500px;			display: flex;			flex-direction: column;			align-items: stretch;			border-radius: 10px;			padding: 0;		}		a {			text-decoration: none;			color: black;			flex: 1;			height: 20px;			font-family: Dosis;			padding: 20px;			text-align: center;			font-size: 2em;			border: 1px solid black;		}		a[href]:hover {			background-color: #c1c1c1;			transition: all .3s ease-in;		}		a[href]:active {			background-color: #eaefda;		}		#logoNav {			font-size: 2em;			font-weight: bold;		}				@media screen and (min-width: 700px) {			nav {				flex-direction: row;				align-items: flex-start;			}			a {				font-size: 1em;				border: none;			}			#logoNav {				flex: 7;				font-size: 1.3em;				text-align: left;			}		}			</style>
+</head>
+<body>
+	<nav>		<a id="logoNav">CODE INSTITUTE</a>
+		<a href="#">Home</a>
+		<a href="#">Projects</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+		<a href="#">Photos</a>	</nav>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+         
+         form input[type="submit"] {
+	         display: block;
+	         margin: 0 auto;
+         }
+
+         legend{
+            font-size: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin: 5px;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 10px;
+            background-color: rgba(129, 187, 201,.2);
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+        <form action="#" method="get">
+	        <fieldset>
+		        <legend>Registration</legend>
+	        <label class="field" for="fname">* First Name:</label><input id="fname" autocomplete="on" type="text" name="fname" placeholder="Enter your first name here" required="" /><br>
+	        <label class="field" for="email">* Email:</label><input id="email" autocomplete="on" type="email" name="email" placeholder="Enter your email here" required="" autofocus /><br>
+	        <label class="field" for="passport">Passport:</label><input id="passport" type="text" name="passport" pattern="[0-9]{7}[A-Za-z]{1}" title="Seven Numbers followed by a single upper or lower case letter." /> <br>
+	        <label class="field" for="website">Website:</label><input id="website" type="url" name="website" /><br>
+	        <label class="field" for="telephone">Telephone:</label><input id="telephone" type="text" name="telephone" pattern="[0-9]{11}" title="000 0000 0000" placeholder="000 0000 0000" /><br>
+	        <label class="field" for="age">Age:</label><input id="age" name="age" type="text" placeholder="Enter your age here" /><br>
+	        <label class="field" for="date">Date:</label><input id="date" type="date" name="date"/>
+	        <fieldset>
+		        <label>Starter<input type="checkbox" name="meal" value="Starter" /></label> <br>
+		        <label>Main<input type="checkbox" name="meal" value="Main" /></label><br>
+		        <label>Dessert<input type="checkbox" name="meal" value="Dessert"/></label><br>
+	        </fieldset>
+	        <fieldset>
+		        <label>Male<input type="radio" name="gender" value="male" /></label><br>
+		        <label>Female<input type="radio" name="gender" value="female" /></label><br>
+		        <label>Other<input type="radio" name="gender" value="Other"/></label><br>
+	        </fieldset>
+	        <fieldset>
+		        <label for="zodiac" class="field">Signs of the Zodiac</label>
+	        	<select id="zodiac">
+					<optgroup label="Favorites">
+						<option value="sun">Sun</option>
+						<option value="earth">Earth</option>
+						<option value="mars">Mars</option>
+						<option value="moon">Moon</option>
+					</optgroup>
+					<optgroup label="more">
+						<option value="fire">Fire</option>
+						<option value="water">Water</option>
+						<option value="ice">Ice</option>
+						<option value="air">Air</option>
+					</optgroup>
+	        	</select>
+	        </fieldset>
+	        <label class="field">Music Genres</label>
+	        	<input list="music" name="music">
+	        		<datalist id="music">
+	        			<option value="Rock"></option>
+	        			<option value="Jazz"></option>
+	        			<option value="Pop"></option>
+	        			<option value="Classical"></option>
+	        			<option value="Blues"></option>
+	        		</datalist>
+	        	<br>
+	        
+	        <label for="volume" class="field">Volume:</label><input id="volume" name="volume" type="range" min="0" max="10" /> <br>
+
+	        <label class="field" for="password">
+	        * Password:</label><input id="password" type="password" name="password" required="" /> <br>
+	       <p>* those fields are required.</p>
+	        </fieldset>
+	        <input type="submit" value="Submit"/>
+        </form>
+    </div>
+   </body>
+</html>
